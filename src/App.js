@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ReactMovingButton from "./react-moving-button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        display: "flex",
+      }}
+    >
+      <ReactMovingButton radius={200}>
+        <button>Apply</button>
+      </ReactMovingButton>
+      <ReactMovingButton radius={300}>
+        <button>End</button>
+      </ReactMovingButton>
+      <ReactMovingButton radius={30}>
+        <button>End</button>
+      </ReactMovingButton>
+      <ReactMovingButton radius={100}>
+        <button>End</button>
+      </ReactMovingButton>
+      Î{" "}
     </div>
   );
 }
