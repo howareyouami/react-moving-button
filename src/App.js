@@ -8,6 +8,8 @@ function App() {
     <div
       style={{
         display: "flex",
+        flexWrap: "wrap",
+        width: "70%",
       }}
     >
       <ReactMovingButton radius={200}>
